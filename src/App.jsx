@@ -8,8 +8,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/docs_clone_frontend" exact element={<Navigate to={`/documents/${uuidV4()}`}/>} />
-        <Route path="/docs_clone_frontend/documents/:id" element={<TextEditor/>} />
+        <Route path="/" exact element={<Navigate to={`/documents/${uuidV4()}`}/>} />
+        <Route path="/documents/:id" element={<TextEditor/>} />
       </Routes>
     </Router>
   )
